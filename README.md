@@ -51,9 +51,14 @@ Username: admin
 Password: admin
 ```
 ### User login
-harsha
-1234
+ username :harsha
+ password :1234
 
+
+ 
+ ###
+ username: root
+ password: root
 ### Technologies Used
 
 * Java
