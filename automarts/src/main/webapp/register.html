@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AUTOMART | Register</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffffff,#f4f4f4,#ececec);
+min-height:100vh;
+}
+
+/* Navbar */
+
+.navbar{
+background:#fff;
+box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+font-size:28px;
+font-weight:bold;
+color:#d60000!important;
+}
+
+.nav-link{
+color:#333!important;
+font-weight:bold;
+}
+
+.nav-link:hover{
+color:#d60000!important;
+}
+
+/* Register Card */
+
+.register-box{
+
+width:500px;
+margin:50px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.register-box h2{
+
+text-align:center;
+color:#d60000;
+font-weight:bold;
+margin-bottom:10px;
+
+}
+
+.register-box p{
+
+text-align:center;
+color:#666;
+margin-bottom:30px;
+
+}
+
+.form-control{
+
+height:48px;
+border-radius:10px;
+
+}
+
+.form-control:focus{
+
+border-color:#d60000;
+box-shadow:0 0 8px rgba(214,0,0,.3);
+
+}
+
+.btn-register{
+
+width:100%;
+height:50px;
+background:#d60000;
+color:white;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:10px;
+transition:.3s;
+
+}
+
+.btn-register:hover{
+
+background:#b00000;
+color:white;
+
+}
+
+.login-link{
+
+text-align:center;
+margin-top:20px;
+
+}
+
+.login-link a{
+
+text-decoration:none;
+font-weight:bold;
+color:#d60000;
+
+}
+
+.footer{
+
+margin-top:50px;
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-sm py-3">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+
+<img src="logo image.png" width="40" class="rounded-circle">
+
+AUTOMART
+
+</a>
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- Register Form -->
+
+<div class="register-box">
+
+<h2>Create Account</h2>
+
+<p>Join <b>AUTOMART</b> and explore premium vehicles & accessories.</p>
+
+<form method="post" action="RegistrationServlet">
+
+<div class="mb-3">
+
+<label class="form-label">Full Name</label>
+
+<input
+type="text"
+class="form-control"
+name="name"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Email Address</label>
+
+<input
+type="email"
+class="form-control"
+name="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Mobile Number</label>
+
+<input
+type="tel"
+class="form-control"
+name="mobile"
+placeholder="Enter your mobile number"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Username</label>
+
+<input
+type="text"
+class="form-control"
+name="username"
+placeholder="Choose a username"
+required>
+
+</div>
+
+<div class="mb-4">
+
+<label class="form-label">Password</label>
+
+<input
+type="password"
+class="form-control"
+name="password"
+placeholder="Create a password"
+required>
+
+</div>
+
+<input
+type="submit"
+value="Create Account"
+class="btn btn-register">
+
+</form>
+
+<div class="login-link">
+
+Already have an account?
+
+<a href="login.html">
+
+Sign In
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+
+<h5 style="color:#d60000;">AUTOMART</h5>
+
+<p>Premium Cars • Bikes • Accessories</p>
+
+<p>© 2026 AUTOMART. All Rights Reserved.</p>
+
+</div>
+
+</body>
+
+</html>
